@@ -7,7 +7,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 
 @TestConfiguration
-@ComponentScan(basePackages = {"com.example.demo.config.problem", "com.example.demo.converter", "com.example.demo.service"})
+@ComponentScan(basePackages = {"com.example.demo.config", "com.example.demo.converter", "com.example.demo.service"})
 public class ProblemTestConfig {
 
     @Bean

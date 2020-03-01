@@ -32,7 +32,7 @@ class DemoApplicationTests {
 
 			source.send(new GenericMessage<byte[]>(CUSTOM_OBJECT_JSON.getBytes()));
 
-			Mockito.verify(demoService, Mockito.never()).handle(any());
+			Mockito.verify(demoService, Mockito.times(1)).handle(any());
 		}
 	}
 }
